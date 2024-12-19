@@ -1,0 +1,70 @@
+/* Основной контейнер для селектора */
+.custom-select {
+    width: 200px;
+    position: relative;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Заголовок (выбранный элемент или заголовок) */
+  .select-title {
+    padding: 10px;
+    background-color: #eef3ed;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: bold;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  .title-happy{
+    background-color: yellow;
+  }
+  .title-blue{
+    background-color: blue;
+  }
+  .title-angry{
+    background-color: red;
+  }
+  
+  /* Стилизация заголовка при наведении */
+  .select-title:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Контейнер с опциями */
+  .select-options {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  /* Раскрытие списка опций */
+  .select-options.collapsed {
+    max-height: 150px; /* Увеличьте это значение, если больше опций */
+    overflow-y: auto;
+  }
+  
+  /* Опция селектора */
+  .select-option {
+    padding: 10px;
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    color: #555;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Стилизация опции при наведении */
+  .select-option:hover {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  /* Добавьте небольшую анимацию при наведении */
+  .select-option:active {
+    transform: scale(0.98);
+  }
